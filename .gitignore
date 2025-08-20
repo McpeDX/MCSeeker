@@ -1,2 +1,5 @@
 package-lock.json
 node_modules/
+GeoLite2.mmdb
+GeoLite2.tar
+*.csv
