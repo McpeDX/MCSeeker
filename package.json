@@ -1,10 +1,22 @@
 {
   "name": "mcseeker",
-  "version": "0.0.2",
-  "description": "A Minecraft server scanner",
+  "version": "0.0.3",
+  "description": "A powerful, modern Minecraft server scanner with GeoIP, bot joining, and CSV output.",
   "author": "Robert Whitney <Me@Rob.cat>",
   "main": "scanner.js",
-  "license": "GPL V3",
+  "license": "GPL-3.0",
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "scripts": {
+    "start": "node scanner.js",
+    "scan": "node scanner.js",
+    "test": "echo 'Run tests here (if you add them!)'",
+    "dev": "node --watch scanner.js"
+  },
+  "bin": {
+    "mcseeker": "./scanner.js"
+  },
   "dependencies": {
     "commandos": "^0.10.1",
     "evilscan": "^1.8.1",
@@ -14,5 +26,25 @@
     "minimatch": "^3.0.4",
     "node-mcpe-color-parser": "^0.1.1",
     "tar-stream": "^2.2.0"
-  }
+  },
+  "devDependencies": {
+    "cli-progress": "^3.10.0"
+  },
+  "keywords": [
+    "minecraft",
+    "server",
+    "scanner",
+    "geolocation",
+    "bot",
+    "network",
+    "port-scan"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/McpeDX/mcseeker.git"
+  },
+  "bugs": {
+    "url": "https://github.com/McpeDX/mcseeker/issues"
+  },
+  "homepage": "https://github.com/McpeDX/mcseeker#readme"
 }
